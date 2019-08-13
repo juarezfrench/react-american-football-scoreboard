@@ -3,6 +3,13 @@ import React, {useState} from "react";
 import "./App.css";
 import BottomRow from "./BottomRow";
 
+
+
+
+const home = "Bikers";
+  const away = "Narcs";
+
+
 function App() {
   //TODO: STEP 2 - Establish your applictaion's state with some useState hooks.  You'll need one for the home score and another for the away score.
 
@@ -13,9 +20,7 @@ function App() {
   const [away__score, setAway_score] = useState(
     0
   );
-  const home = "Bikers";
-  const away = "Narcs";
-
+  
 
    adjustScore("Hawks", 20);
 
@@ -26,19 +31,21 @@ function App() {
     if (team === home) {
       //console.log('App.js -> %cteam === home:', 'color: red', team === home)
 
-     {
+     
        let adjustment = () => setHome_score(home__score + x);
-       return adjustment
-     }
+       return adjustment}
+     
 
-    } 
-    
-    else {
    
-      setAway_score(away__score + x)};
+    
+    else 
+   
+     { let adjustment = () =>setAway_score(away__score + x)
 
+      return adjustment}
       
     }
+   
   
 
   return (
@@ -113,10 +120,11 @@ function App() {
       </section>
     </div>
   );
-           }
+           
          
-       
+          }
 
-export default App;
+export default App
+
 
 // Woo Hoo!
